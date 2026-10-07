@@ -1,0 +1,24 @@
+{
+  "version": 4,
+  "name": "Cart total ignores quantity",
+  "url": "http://127.0.0.1:3000/login",
+  "createdAt": "2026-01-01T10:00:00.000Z",
+  "status": "open",
+  "history": [{ "at": "2026-01-01T10:00:00.000Z", "from": null, "to": "open", "reason": "recorded" }],
+  "browser": "Chromium",
+  "viewport": { "width": 1280, "height": 800 },
+  "session": false,
+  "steps": [
+    { "type": "goto", "url": "http://127.0.0.1:3000/login" },
+    { "type": "input", "selector": "[data-testid=\"user\"]", "selectors": ["[data-testid=\"user\"]"], "value": "admin" },
+    { "type": "input", "selector": "[data-testid=\"pass\"]", "selectors": ["[data-testid=\"pass\"]"], "value": "demo" },
+    { "type": "click", "selector": "[data-testid=\"login\"]", "selectors": ["[data-testid=\"login\"]"] },
+    { "type": "hover", "selector": "[data-testid=\"nav-products\"]", "selectors": ["[data-testid=\"nav-products\"]"] },
+    { "type": "click", "selector": "[data-testid=\"nav-catalog\"]", "selectors": ["[data-testid=\"nav-catalog\"]"] },
+    { "type": "click", "selector": "[data-testid=\"add-1\"]", "selectors": ["[data-testid=\"add-1\"]"] },
+    { "type": "click", "selector": "[data-testid=\"add-1\"]", "selectors": ["[data-testid=\"add-1\"]"] },
+    { "type": "click", "selector": "[data-testid=\"add-2\"]", "selectors": ["[data-testid=\"add-2\"]"] },
+    { "type": "click", "selector": "[data-testid=\"nav-cart\"]", "selectors": ["[data-testid=\"nav-cart\"]"] },
+    { "type": "assert", "kind": "text", "selector": "[data-testid=\"total\"]", "selectors": ["[data-testid=\"total\"]"], "value": "$25.00", "note": "2 x Widget (10) + 1 x Gadget (5)" }
+  ]
+}

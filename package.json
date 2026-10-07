@@ -1,0 +1,49 @@
+{
+  "name": "bugassay",
+  "version": "2.0.0",
+  "description": "Record a browser bug once, replay it anywhere. Bug lifecycle, step editor, replay --all and a dashboard.",
+  "keywords": [
+    "bug",
+    "reproduction",
+    "playwright",
+    "qa",
+    "regression",
+    "replay",
+    "e2e",
+    "testing"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<your-user>/bugassay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<your-user>/bugassay/issues"
+  },
+  "homepage": "https://github.com/<your-user>/bugassay#readme",
+  "type": "module",
+  "bin": {
+    "bugassay": "src/cli.js"
+  },
+  "files": [
+    "src",
+    "demo",
+    "docs",
+    "config.example.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "demo": "node demo/server.js",
+    "demo:seed": "node demo/seed.js",
+    "start": "node src/cli.js ui",
+    "doctor": "node src/cli.js doctor"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0",
+    "commander": "^14.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

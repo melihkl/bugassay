@@ -1,0 +1,18 @@
+{
+  "url": "http://localhost:3000",
+  "browserPath": "",
+  "delay": 700,
+  "typingDelay": 40,
+  "timeout": 15000,
+  "viewport": "1440x900",
+  "headless": false,
+  "video": false,
+  "stepScreenshots": true,
+  "hoverMs": 350,
+  "hoverWait": 500,
+  "session": "session.json",
+  "uiPort": 4300,
+  "recordingsDir": "bugassay-recordings",
+  "autoStatus": true,
+  "replay": "last"
+}

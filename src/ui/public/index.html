@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="bugassay-token" content="__TOKEN__">
+  <title>Bugassay</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/">Bugassay</a>
+    <nav>
+      <a href="#/" data-nav="dash">Dashboard</a>
+      <a href="#/settings" data-nav="settings">Settings</a>
+    </nav>
+    <span class="spacer"></span>
+    <button id="btn-record" class="btn primary">Record</button>
+    <button id="btn-all" class="btn">Replay all</button>
+    <button id="btn-login" class="btn">Save login</button>
+  </header>
+  <main id="view"></main>
+  <section id="job" class="job" hidden>
+    <div class="job-head">
+      <strong id="job-title"></strong>
+      <span id="job-status" class="badge"></span>
+      <span class="spacer"></span>
+      <button id="job-finish" class="btn small" hidden>Finish recording</button>
+      <button id="job-kill" class="btn small" hidden>Cancel</button>
+      <button id="job-close" class="btn small">Hide</button>
+    </div>
+    <pre id="job-log"></pre>
+  </section>
+  <div id="tip" class="tip" role="tooltip" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
